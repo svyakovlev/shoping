@@ -11,6 +11,7 @@ import java.util.List;
 
 @Service
 @SessionScope
+
 public class BasketServiceImpl implements BasketService {
     private final List<Integer> basket;
 

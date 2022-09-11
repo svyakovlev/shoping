@@ -1,5 +1,4 @@
 package yakovlev.shoping;
-
 import java.util.Collection;
 
 public interface BasketService {
