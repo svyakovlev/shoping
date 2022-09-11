@@ -1,6 +1,5 @@
 package yakovlev.shoping;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.annotation.SessionScope;
 
@@ -20,8 +19,10 @@ public class BasketServiceImpl implements BasketService {
     }
 
     @Override
-    public Integer add(Integer product) {
-        basket.add(product);
+    public Collection<Integer> add(List<Integer> product) {
+        for (Integer integer : product) {
+            basket.add(integer);
+        }
         return product;
     }
 

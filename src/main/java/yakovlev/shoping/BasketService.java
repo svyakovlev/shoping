@@ -1,7 +1,10 @@
 package yakovlev.shoping;
 import java.util.Collection;
+import java.util.List;
 
 public interface BasketService {
-    Integer add(Integer product);
+
+    Collection<Integer> add(List<Integer> product);
+
     Collection<Integer> get();
 }
